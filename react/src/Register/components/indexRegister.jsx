@@ -2,31 +2,18 @@ import { Header, Main } from "./styleRegister"
 import * as yup from 'yup';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
 
 function RegisterPage(){
 
-    // const [id, setId] = useState('')
-
-    // function createId() {
-    //     let randonString = '';
-    //     let caracters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    //     for (let i = 0; i < 10; i++) {
-    //         randonString += caracters.charAt(Math.floor(Math.random() * caracters.length));
-    //     }
-    //     setId(randonString)
-    //     return randonString;
-    // }
-
     const navigate = useNavigate()
 
     const formSchema = yup.object().shape({
         email: yup.string().required("E-mail obrigatório").email("E-mail inválido"),
         name: yup.string().required("Nome obrigatório"),
-        password: yup.string().required("Senha obrigatória"),
+        password: yup.string().min(8, "A senha precisa ter no minimo 8 digitos").required("Senha obrigatória"),
         img: yup.string().required("Foto obrigatória")
     });
     
