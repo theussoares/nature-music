@@ -1,0 +1,12 @@
+html {
+  background-image: linear-gradient(to right, #0d1226 0%, #1f1734 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --primary: #040517;
+  --text-primary: #e5e5e5e7;
+  --text-secondary: #f5f5f555;
+  --scroll: rgb(32, 15, 86);
+
+}
