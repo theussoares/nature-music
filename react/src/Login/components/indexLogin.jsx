@@ -41,8 +41,7 @@ function LoginPage(){
     function onSubmitFunction (data) {
         createId()
         localStorage.setItem('@UserId', id)
-
-       navigate('/')
+        navigate('/')
     };
 
     function turnToRegisterPage(){

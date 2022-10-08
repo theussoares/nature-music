@@ -1,7 +1,14 @@
+import Home from "./Home/indexHome"
+import { Main } from "./styleLandPage"
+import SideMenu from "./UserPerfil/indexUserPerfil"
+
 function LandPage(){
 
     return(
-        <><h1>oi</h1></>
+        <Main>
+            <SideMenu />
+            <Home />
+        </Main>
     )
 }
 
