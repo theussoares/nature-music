@@ -14,6 +14,7 @@ import musica6 from '../../../assets/musica6.jpg'
 import musica7 from '../../../assets/musica7.webp'
 import { Div } from "./styleHome";
 import Artists from "./Artists/indexArtists";
+import Songs from "./Songs/indexSongs";
 
 function Home(){
 
@@ -43,7 +44,7 @@ function Home(){
         nome: 'dont stop',
         musicas: 63 + ' musicas'
     }])
-    const [listaDeMusicas, setMusicas] = useState([
+    const [musicList, setMusicas] = useState([
         {
             img: musica1,
             artista: 'Fresno',
@@ -92,7 +93,11 @@ function Home(){
                     {pesquisa.length > 0 && <button onClick={(e) => limparPesquisa(e)}>x</button>}
             </div>
             <PlayLists listOfPlayList={playlists}/>
-            <Artists />
+            <div className="bottomSection">
+                <Artists />
+                <Songs musicList={musicList}/>
+            </div>
+            
         </Div>
     )
 }
