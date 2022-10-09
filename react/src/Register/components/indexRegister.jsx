@@ -27,11 +27,11 @@ function RegisterPage(){
         localStorage.setItem('@UserEmail', data.email)
         localStorage.setItem('@UserPassword', data.password)
 
-        navigate('/login')
+        navigate('/')
     }
 
     function turnToLogin(){
-        navigate('/login')
+        navigate('/')
     }
 
 
