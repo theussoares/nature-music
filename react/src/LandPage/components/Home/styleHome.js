@@ -7,6 +7,8 @@ export const Div =  styled.div`
     padding-left: 50px;
     padding-top: 20px;
 
+    width: 100%;
+
     .pesquisa{
         display: flex;
         align-items: center;
@@ -39,6 +41,12 @@ export const Div =  styled.div`
             color: var(--text-primary);
             font-size: 12px;
         }
+    }
+
+    .bottomSection{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
 `
