@@ -98,4 +98,8 @@ export const Aside = styled.aside`
         color: var(--text-primary);
     }
 
+    .actived{
+        color: var(--text-primary);
+    }
+
 `
