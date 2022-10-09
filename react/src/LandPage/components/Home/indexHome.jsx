@@ -5,9 +5,6 @@ import albumCruz from '../../../assets/albumCruz.jpg';
 import rock from '../../../assets/rock.jpg';
 import olds from '../../../assets/olds.jpg';
 import eletronic from '../../../assets/eletronic.jpg';
-// import alessandro from '../../../assets/alessandro.jpg';
-// import sam from '../../../assets/sam.jpg';
-// import mj from '../../../assets/mj.jpg';
 import musica1 from '../../../assets/musica1.jpg'
 import musica2 from '../../../assets/musica2.jpg'
 import musica3 from '../../../assets/musica3.png'
@@ -16,6 +13,7 @@ import musica5 from '../../../assets/musica5.jpg'
 import musica6 from '../../../assets/musica6.jpg'
 import musica7 from '../../../assets/musica7.webp'
 import { Div } from "./styleHome";
+import Artists from "./Artists/indexArtists";
 
 function Home(){
 
@@ -94,6 +92,7 @@ function Home(){
                     {pesquisa.length > 0 && <button onClick={(e) => limparPesquisa(e)}>x</button>}
             </div>
             <PlayLists listOfPlayList={playlists}/>
+            <Artists />
         </Div>
     )
 }
